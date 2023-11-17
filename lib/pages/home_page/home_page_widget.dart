@@ -61,44 +61,44 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 22,
                 ),
           ),
           actions: [],
           centerTitle: false,
-          elevation: 2.0,
+          elevation: 2,
         ),
         body: SafeArea(
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [],
-              ),
-              FFButtonWidget(
-                onPressed: () async {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const PrebuiltPageWidget()));
-                  // context.goNamed('PrebuiltPage');
-                },
-                text: 'Join',
-                options: FFButtonOptions(
-                  height: 40.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                  iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primary,
-                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily: 'Readex Pro',
-                        color: Colors.white,
+              Expanded(
+                child: Align(
+                  alignment: AlignmentDirectional(0.00, 0.00),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const PrebuiltPageWidget()));
+                    },
+                    text: 'Join',
+                    options: FFButtonOptions(
+                      height: 40,
+                      padding: EdgeInsetsDirectional.fromSTEB(24, 0, 24, 0),
+                      iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                      color: FlutterFlowTheme.of(context).primary,
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Readex Pro',
+                                color: Colors.white,
+                              ),
+                      elevation: 3,
+                      borderSide: BorderSide(
+                        color: Colors.transparent,
+                        width: 1,
                       ),
-                  elevation: 3.0,
-                  borderSide: BorderSide(
-                    color: Colors.transparent,
-                    width: 1.0,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
-                  borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
             ],

@@ -7,6 +7,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'prebuilt_page_model.dart';
 export 'prebuilt_page_model.dart';
 
@@ -58,21 +59,7 @@ class _PrebuiltPageWidgetState extends State<PrebuiltPageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: SafeArea(
-          top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Expanded(
-                child: custom_widgets.TestPrebuilt(
-                  width: double.infinity,
-                  height: double.infinity,
-                ),
-              ),
-            ],
-          ),
-        ),
+        body: custom_widgets.TestPrebuilt(),
       ),
     );
-  }
-}
+  }}
