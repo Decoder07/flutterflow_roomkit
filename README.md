@@ -6,7 +6,7 @@ Welcome to the FlutterFlow and HMS Room Kit App Starter project! This Flutter te
 
 - **FlutterFlow Integration:** Leverage FlutterFlow's intuitive visual development platform to design stunning user interfaces for your Flutter app effortlessly.
 
-- **HMS Room Kit:** Integrate Huawei's HMS Room Kit for seamless real-time communication features such as instant messaging, audio, and video calls into your Flutter application.
+- **HMS Room Kit:** Integrate 100ms HMS Room Kit for seamless real-time communication features such as instant messaging, audio, and video calls into your Flutter application.
 
 ## Getting Started
 
